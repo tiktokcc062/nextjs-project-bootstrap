@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data-extraction-rules>
+    <cloud-backup>
+        <!-- Exclude sensitive data from cloud backup -->
+        <exclude domain="sharedpref" path="aman_secure_prefs.xml" />
+        <exclude domain="database" path="aman_database" />
+        <exclude domain="file" path="modules/" />
+        <exclude domain="file" path="photos/" />
+        <exclude domain="file" path="dex_opt/" />
+        <exclude domain="file" path="sandbox_*" />
+    </cloud-backup>
+    
+    <device-transfer>
+        <!-- Exclude sensitive data from device transfer -->
+        <exclude domain="sharedpref" path="aman_secure_prefs.xml" />
+        <exclude domain="database" path="aman_database" />
+        <exclude domain="file" path="modules/" />
+        <exclude domain="file" path="photos/" />
+        <exclude domain="file" path="dex_opt/" />
+        <exclude domain="file" path="sandbox_*" />
+    </device-transfer>
+</data-extraction-rules>
